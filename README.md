@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Sui DApp Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi demo yang menunjukkan integrasi dengan Sui blockchain menggunakan Suiet Wallet Kit.
 
-## Available Scripts
+## Fitur
 
-In the project directory, you can run:
+- Koneksi dengan wallet Sui (Suiet, Sui Wallet, Ethos Wallet, dll)
+- Menampilkan informasi wallet yang terhubung
+- Contoh eksekusi Move Call (NFT Minting)
+- Contoh penandatanganan pesan
 
-### `npm start`
+## Teknologi yang Digunakan
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- [Suiet Wallet Kit](https://kit.suiet.app)
+- [@mysten/sui](https://www.npmjs.com/package/@mysten/sui) - SDK Sui
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Memulai
 
-### `npm test`
+### Prasyarat
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (versi 14 atau lebih baru)
+- NPM atau Yarn
+- Browser web modern dengan ekstensi wallet Sui (Suiet, Sui Wallet, dll.)
 
-### `npm run build`
+### Instalasi
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone repository ini:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone <repository-url>
+cd project-blockchain
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Jalankan aplikasi dalam mode development:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Buka [http://localhost:3000](http://localhost:3000) untuk melihat aplikasi di browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Penggunaan
 
-## Learn More
+1. Klik tombol "Connect Wallet" untuk menghubungkan wallet Sui Anda.
+2. Setelah terhubung, informasi wallet Anda akan ditampilkan.
+3. Gunakan tombol "Execute Move Call" untuk mencoba menjalankan fungsi mint NFT.
+4. Gunakan tombol "Sign Message" untuk menandatangani pesan "Hello World".
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Catatan Penting
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Contoh Move Call menggunakan package ID contoh (`0x1`). Untuk aplikasi nyata, Anda perlu mengganti ini dengan package ID yang valid.
+- Aplikasi ini adalah demo dan tidak dirancang untuk digunakan dalam produksi tanpa modifikasi lebih lanjut.
 
-### Code Splitting
+## Sumber Daya
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Dokumentasi Suiet Kit](https://kit.suiet.app/docs/QuickStart/)
+- [Dokumentasi Sui](https://docs.sui.io/)
 
-### Analyzing the Bundle Size
+## Lisensi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
